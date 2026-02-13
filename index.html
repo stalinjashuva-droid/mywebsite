@@ -10,21 +10,22 @@
     <h2>Abbas's Store</h2>
   </nav>
 
-  <section class="hero">
-    <h1>Welcome to Our Store</h1>
-    <p>Latest Collection</p>
+  <section class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('men')">Men</button>
+    <button onclick="filterProducts('women')">Women</button>
   </section>
 
-  <section class="products">
-    <div class="card">
-      <img src="images/product1.jpg">
-      <h3>Blue Shirt</h3>
-      <p>₹1499</p>
-      <button onclick="orderNow()">Buy Now</button>
-    </div>
+  <section id="products" class="products">
+    <!-- Products will load here dynamically -->
   </section>
 
-<script src="script.js"></script>
+  <section class="cart-section">
+    <h3>Cart</h3>
+    <ul id="cartItems"></ul>
+    <button onclick="buyAll()">Buy All</button>
+  </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
